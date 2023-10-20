@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@netlify/functions": "^2.3.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -12,13 +13,18 @@
     "web-vitals": "^3.5.0"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "*"
+    "@babel/plugin-proposal-private-property-in-object": "*",
+    "@babel/preset-react": "^7.22.15",
+    "babel-jest": "^29.7.0",
+    "jest-css-modules": "^2.1.0",
+    "netlify-lambda": "^2.0.16"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:functions": "netlify-lambda build netlify/functions"
   },
   "eslintConfig": {
     "extends": [
