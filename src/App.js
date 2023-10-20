@@ -11,7 +11,7 @@ function App() {
 }
 
 function Board() {
-  const [startingPlayer, setStartingPlayer] = useState('X');
+  // const [startingPlayer, setStartingPlayer] = useState('X');
   const [isXNext, setIsXNext] = useState(true);
   const [squares, setSquares] = useState(Array(9).fill(null));
   const winningInfo = calculateWinner(squares);
