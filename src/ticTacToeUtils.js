@@ -40,8 +40,9 @@ function randomMove(squares) {
     return emptySquares[Math.floor(Math.random() * emptySquares.length)];
 }
 
-module.exports = {
+export {
     calculateWinner,
     findBestMove,
     randomMove
 };
+
