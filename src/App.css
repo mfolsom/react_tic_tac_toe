@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 60px);
+  gap: 5px;
+  margin: 20px auto;
+  width: 200px;
+}
+
+.square {
+  width: 60px;
+  height: 60px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.text-green {
+  color: green;
+} 
+
+.text-orange {
+  color: orange;
+} 
+
+.text-red {
+  color: red;
+}
+
+.highlight {
+  background-color: magenta;
+}
+
+.status {
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.reset-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
