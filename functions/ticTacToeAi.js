@@ -1,4 +1,5 @@
-import type { Handler } from "@netlify/functions";
+// Import necessary utilities or functions here
+import { Handler } from "@netlify/functions";
 import { calculateWinner, randomMove } from "../src/ticTacToeUtils.js";
 
 const findBestMove = (squares) => {
