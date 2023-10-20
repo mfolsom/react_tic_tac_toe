@@ -1,5 +1,5 @@
 const { Handler } = require("@netlify/functions");
-const { calculateWinner, randomMove } = require("../src/ticTacToeUtils.js");
+const { calculateWinner, randomMove } = require("../../src/ticTacToeUtils.js");
 
 const findBestMove = (squares) => {
     // Clone the squares array to test potential moves
