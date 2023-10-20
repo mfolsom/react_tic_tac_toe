@@ -1,6 +1,5 @@
-// Import necessary utilities or functions here
-import { Handler } from "@netlify/functions";
-import { calculateWinner, randomMove } from "../src/ticTacToeUtils.js";
+const { Handler } = require("@netlify/functions");
+const { calculateWinner, randomMove } = require("../src/ticTacToeUtils.js");
 
 const findBestMove = (squares) => {
     // Clone the squares array to test potential moves
@@ -32,7 +31,7 @@ const findBestMove = (squares) => {
     return randomMove(squares);
 };
 
-const handler: Handler = async (event, context) => {
+const handler = async (event, context) => {
     if (event.httpMethod !== "POST") {
         return { statusCode: 405, body: "Method Not Allowed" };
     }
@@ -55,4 +54,4 @@ const handler: Handler = async (event, context) => {
     }
 };
 
-export { handler };
+module.exports = { handler };
